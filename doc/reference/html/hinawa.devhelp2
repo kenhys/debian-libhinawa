@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Hinawa Reference Manual" link="index.html" author="" name="hinawa" version="2" language="c">
+  <chapters>
+    <sub name="Reference" link="reference.html">
+      <sub name="Introduction" link="introduction.html"/>
+      <sub name="libhinawa" link="libhinawa.html">
+        <sub name="HinawaFwUnit" link="HinawaFwUnit.html"/>
+        <sub name="HinawaFwResp" link="HinawaFwResp.html"/>
+        <sub name="HinawaFwReq" link="HinawaFwReq.html"/>
+        <sub name="HinawaFwFcp" link="HinawaFwFcp.html"/>
+        <sub name="HinawaSndUnit" link="HinawaSndUnit.html"/>
+        <sub name="HinawaSndDice" link="HinawaSndDice.html"/>
+        <sub name="HinawaSndEfw" link="HinawaSndEfw.html"/>
+        <sub name="HinawaSndDg00x" link="HinawaSndDg00x.html"/>
+        <sub name="HinawaSndMotu" link="HinawaSndMotu.html"/>
+        <sub name="Annotation Glossary" link="libhinawa.html#annotation-glossary"/>
+      </sub>
+    </sub>
+    <sub name="Index of all symbols" link="index-all.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="hinawa_fw_unit_open ()" link="HinawaFwUnit.html#hinawa-fw-unit-open"/>
+    <keyword type="function" name="hinawa_fw_unit_get_config_rom ()" link="HinawaFwUnit.html#hinawa-fw-unit-get-config-rom"/>
+    <keyword type="function" name="hinawa_fw_unit_listen ()" link="HinawaFwUnit.html#hinawa-fw-unit-listen"/>
+    <keyword type="function" name="hinawa_fw_unit_unlisten ()" link="HinawaFwUnit.html#hinawa-fw-unit-unlisten"/>
+    <keyword type="property" name="The “bus-manager-node-id” property" link="HinawaFwUnit.html#HinawaFwUnit--bus-manager-node-id"/>
+    <keyword type="property" name="The “generation” property" link="HinawaFwUnit.html#HinawaFwUnit--generation"/>
+    <keyword type="property" name="The “ir-manager-node-id” property" link="HinawaFwUnit.html#HinawaFwUnit--ir-manager-node-id"/>
+    <keyword type="property" name="The “listening” property" link="HinawaFwUnit.html#HinawaFwUnit--listening"/>
+    <keyword type="property" name="The “local-node-id” property" link="HinawaFwUnit.html#HinawaFwUnit--local-node-id"/>
+    <keyword type="property" name="The “node-id” property" link="HinawaFwUnit.html#HinawaFwUnit--node-id"/>
+    <keyword type="property" name="The “root-node-id” property" link="HinawaFwUnit.html#HinawaFwUnit--root-node-id"/>
+    <keyword type="signal" name="The “bus-update” signal" link="HinawaFwUnit.html#HinawaFwUnit-bus-update"/>
+    <keyword type="signal" name="The “disconnected” signal" link="HinawaFwUnit.html#HinawaFwUnit-disconnected"/>
+    <keyword type="function" name="hinawa_fw_resp_register ()" link="HinawaFwResp.html#hinawa-fw-resp-register"/>
+    <keyword type="function" name="hinawa_fw_resp_unregister ()" link="HinawaFwResp.html#hinawa-fw-resp-unregister"/>
+    <keyword type="signal" name="The “requested” signal" link="HinawaFwResp.html#HinawaFwResp-requested"/>
+    <keyword type="function" name="hinawa_fw_req_write ()" link="HinawaFwReq.html#hinawa-fw-req-write"/>
+    <keyword type="function" name="hinawa_fw_req_read ()" link="HinawaFwReq.html#hinawa-fw-req-read"/>
+    <keyword type="function" name="hinawa_fw_req_lock ()" link="HinawaFwReq.html#hinawa-fw-req-lock"/>
+    <keyword type="property" name="The “timeout” property" link="HinawaFwReq.html#HinawaFwReq--timeout"/>
+    <keyword type="function" name="hinawa_fw_fcp_listen ()" link="HinawaFwFcp.html#hinawa-fw-fcp-listen"/>
+    <keyword type="function" name="hinawa_fw_fcp_transact ()" link="HinawaFwFcp.html#hinawa-fw-fcp-transact"/>
+    <keyword type="function" name="hinawa_fw_fcp_unlisten ()" link="HinawaFwFcp.html#hinawa-fw-fcp-unlisten"/>
+    <keyword type="function" name="hinawa_snd_unit_open ()" link="HinawaSndUnit.html#hinawa-snd-unit-open"/>
+    <keyword type="function" name="hinawa_snd_unit_lock ()" link="HinawaSndUnit.html#hinawa-snd-unit-lock"/>
+    <keyword type="function" name="hinawa_snd_unit_unlock ()" link="HinawaSndUnit.html#hinawa-snd-unit-unlock"/>
+    <keyword type="function" name="hinawa_snd_unit_read_transact ()" link="HinawaSndUnit.html#hinawa-snd-unit-read-transact"/>
+    <keyword type="function" name="hinawa_snd_unit_write_transact ()" link="HinawaSndUnit.html#hinawa-snd-unit-write-transact"/>
+    <keyword type="function" name="hinawa_snd_unit_lock_transact ()" link="HinawaSndUnit.html#hinawa-snd-unit-lock-transact"/>
+    <keyword type="function" name="hinawa_snd_unit_listen ()" link="HinawaSndUnit.html#hinawa-snd-unit-listen"/>
+    <keyword type="function" name="hinawa_snd_unit_unlisten ()" link="HinawaSndUnit.html#hinawa-snd-unit-unlisten"/>
+    <keyword type="property" name="The “card” property" link="HinawaSndUnit.html#HinawaSndUnit--card"/>
+    <keyword type="property" name="The “device” property" link="HinawaSndUnit.html#HinawaSndUnit--device"/>
+    <keyword type="property" name="The “guid” property" link="HinawaSndUnit.html#HinawaSndUnit--guid"/>
+    <keyword type="property" name="The “listening” property" link="HinawaSndUnit.html#HinawaSndUnit--listening"/>
+    <keyword type="property" name="The “streaming” property" link="HinawaSndUnit.html#HinawaSndUnit--streaming"/>
+    <keyword type="property" name="The “type” property" link="HinawaSndUnit.html#HinawaSndUnit--type"/>
+    <keyword type="signal" name="The “lock-status” signal" link="HinawaSndUnit.html#HinawaSndUnit-lock-status"/>
+    <keyword type="function" name="hinawa_snd_dice_open ()" link="HinawaSndDice.html#hinawa-snd-dice-open"/>
+    <keyword type="function" name="hinawa_snd_dice_transact ()" link="HinawaSndDice.html#hinawa-snd-dice-transact"/>
+    <keyword type="signal" name="The “notified” signal" link="HinawaSndDice.html#HinawaSndDice-notified"/>
+    <keyword type="function" name="hinawa_snd_efw_open ()" link="HinawaSndEfw.html#hinawa-snd-efw-open"/>
+    <keyword type="function" name="hinawa_snd_efw_transact ()" link="HinawaSndEfw.html#hinawa-snd-efw-transact"/>
+    <keyword type="function" name="hinawa_snd_dg00x_open ()" link="HinawaSndDg00x.html#hinawa-snd-dg00x-open"/>
+    <keyword type="signal" name="The “message” signal" link="HinawaSndDg00x.html#HinawaSndDg00x-message"/>
+    <keyword type="function" name="hinawa_snd_motu_open ()" link="HinawaSndMotu.html#hinawa-snd-motu-open"/>
+    <keyword type="signal" name="The “notified” signal" link="HinawaSndMotu.html#HinawaSndMotu-notified"/>
+  </functions>
+</book>

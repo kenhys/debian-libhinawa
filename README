@@ -1,0 +1,35 @@
+Requirements
+- GNU Autoconf 2.62 or later
+- GNU Automake 1.10.1 or later
+- GNU libtool 2.2.6 or later
+- Glib 2.34.0 or later
+- GTK-Doc 1.18-2
+- GObject Introspection 1.32.1 or later
+- Linux kernel 3.12 or later
+
+How to build
+ $ ./autogen.sh
+ $ ./configure
+ $ make
+ $ make install
+
+How to refer document
+ $ ./autogen.sh
+ $ ./configure --enable-gtk-doc
+ $ make
+ $ make install
+
+How to test
+(needless to install)
+ $ ./autogen.sh
+ $ ./configure
+ $ make
+ $ ./samples/run.sh [gtk|qt4|qt5]
+gtk - PyGObject is required.
+qt4 - PyQt4 is required (also test python2).
+qt5 - PyQt5 is required.
+
+How to make RPM package
+1. archive all source code into libhinawa-0.8.2.tar.gz
+  $ git archive --format tar.gz --prefix='libhinawa-0.8.2/' 0.8.2 -o ~/rpmbuild/SOURCES/libhinawa-0.8.2.tar.gz
+2. rpmbuild -bb libhinawa.spec
